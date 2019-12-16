@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+    function myFunction(n1) {
+      var n1=parseInt(prompt("The 1st number is "));
+      if (n1<45 ) {
+        answer = "F" ;
+      }else if (n1<60 ) {
+        answer = "C";
+      }else if (n1<75 ) {
+        answer = "B";
+
+      }else if(n1<=100){
+        answer = "A";
+      }else{
+        answer = "wrong mark";
+      }
+      window.alert( answer);
+    }
+    </script>
+
+  </body>
+</html>

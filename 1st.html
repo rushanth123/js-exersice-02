@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display a greater number:</p>
+
+<button onclick="myFunction(5,10)">Try it</button>
+
+<p id="demo"></p>
+<button onclick="myFunction(10,20)">Try it</button>
+
+<p id=demo2 myFunction></p>
+
+<script>
+function myFunction(a,b) {
+  var a,b;
+  if (a > b) {
+    greeting = a;
+  } else {
+    greeting = b;
+  }
+  document.getElementById("demo").innerHTML = "The greater number of 5 and 10 is " + greeting;
+  document.getElementById("demo2").innerHTML = "The greater number of 10 and 20 is " + greeting;
+
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <button onclick="color()">Try it</button>
+
+    <p id="demo">ssss</p>
+    <script>
+    function color(){
+    var x=parseInt(prompt("Enter your number"));
+     if(x<10){
+       x="Blue";
+     }
+     else if (x<=20){
+       x="red";
+     }else if(x<30){
+       x="Green";
+     }else {
+       x="It is not a correct colour option.";
+     }
+     //document.getElementetById('demo').innerHTML=x;
+     document.getElementById("demo").innerHTML=x;
+    }
+
+    </script>
+  </body>
+</html>

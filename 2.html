@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to get a max number:</p>
+
+<button onclick="myFunction(1,2,5,4,3)">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+
+
+function myFunction(n1,n2,n3,n4,n5) {
+
+  var n1=parseInt(prompt("The 1st number is "));
+  var n2=parseInt(prompt("The 2nd number is "));
+  var n3=parseInt(prompt("The 3rd number is "));
+  var n4=parseInt(prompt("The 4th number is "));
+  var n5=parseInt(prompt("The 5th number is "));
+
+  if (n1>n2 && n1>n3 && n1>n4 && n1>n5 ) {
+    answer = "The maximum number is " + n1;
+  }else if (n2>n1 && n2>n3 && n2>n4 && n2>n5 ) {
+    answer = "The maximum number is " +  n2;
+  }else if (n3>n2 && n3>n1 && n3>n4 && n3>n5 ) {
+    answer = "The maximum number is "  + n3;
+  }else if (n4>n2 && n4>n3 && n4>n1 && n1>n5 ) {
+    answer = "The maximum number is "+ n4;
+  }else {
+    answer = "The maximum number is " +  n5;
+  }
+  window.alert( answer);
+}
+</script>
+
+</body>
+</html>
